@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "openzeppelin/contracts/utils/Address.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
 
 interface IFlashLoanEtherReceiver {
     function execute() external payable;

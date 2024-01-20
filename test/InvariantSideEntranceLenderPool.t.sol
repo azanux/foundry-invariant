@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
+
 import "forge-std/Test.sol";
 import "forge-std/Vm.sol";
 import "forge-std/console2.sol";
@@ -19,7 +20,7 @@ contract InvariantSideEntranceLenderPool is Test {
         // set the handler contract as the target for our test
         targetContract(address(handler));
     }
-    
+
     // invariant test function
     function invariant_poolBalanceAlwaysGtThanInitialBalance() external {
         // assert that the pool balance will never go below the initial balance (the 10 ether deposited during deployment)
